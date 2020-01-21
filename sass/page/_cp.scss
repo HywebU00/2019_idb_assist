@@ -52,6 +52,9 @@ h1.title {
     a {
         text-decoration:none;
         color:$secondaryColor;
+        &:hover{
+            color:darken($secondaryColor, 10);
+        }
     }
     .info {
         font-size: 0.938em;
