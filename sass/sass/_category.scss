@@ -1,0 +1,41 @@
+.category {
+    @extend %clearfix;
+    text-align: left;
+    margin: 1em auto;
+    ul {
+        @include li-reset;
+        li {
+            margin: 0px 3px 3px 0px;
+            display: block;
+            float: left;
+        }
+    }
+    a {
+        background: #fff;
+        border: 1px solid $aColor;
+        padding: .4em 1em;
+        display: block;
+        color: #333;
+        @include box-sizing();
+        border-radius:2px;
+        &:hover,
+        &:focus,
+        &.active
+         {
+            color: #FFF;
+            background: $primaryColor;
+            border: 1px solid $primaryColor;
+        }
+        span {
+            font-size: .813em;
+            &:before {
+                content: "(";
+                display: inline-block;
+            }
+            &:after {
+                content: ")";
+                display: inline-block;
+            }
+        }
+    }
+}

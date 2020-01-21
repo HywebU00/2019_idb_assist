@@ -1,0 +1,155 @@
+.sp{
+  h2{
+    &:after {
+      content: "";
+      width: 24px;
+      height: 1px;
+      background: $primaryColor;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+    }
+  }
+  .qualified_list{
+    padding: 15px 0;
+    @include clearfix;
+    ul{
+      list-style: none;
+      padding: 0;
+      overflow:hidden;
+      margin-top: 0;
+    }
+    .organization{
+      @include make-xs-column(12);
+      @include make-sm-column(6);
+      @include make-md-column(4);
+      @include make-lg-column(4);
+      @include gutter();
+      border-radius: 4px;
+      padding: 10px;
+      @media(min-width: 768px) and (max-width: 991px){
+        &:nth-child(2n+1){
+          clear: both;
+        }
+      }
+      @media(min-width: 992px) {
+        &:nth-child(3n+1){
+          clear: both;
+        }
+      }
+      h3{
+        background:$primaryColor;
+        color: #fff;
+        margin:0;
+        padding: .5em .2em;
+        line-height: 1.5;
+        text-align: center;
+        border-radius: 4px 4px 0 0;
+      }
+      >ul{
+        padding: 3px;
+        background: $primaryColor;
+        border-radius: 0 0 4px 4px;
+      }
+      li{
+        background: #fff;
+        padding: .5em;
+        margin-bottom:3px;
+        &:last-child{
+           margin-bottom: 1px;
+        }
+        a{
+          color: $color-word;
+        }
+      }
+    }
+  }
+}
+.sp_apply{
+  h2{
+    &:after{
+      content: "";
+      width: 24px;
+      height: 1px;
+      background: $primaryColor;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+    }
+  }
+  .table_list{
+    th, td{
+      text-align: left;
+    }
+  }
+  .table{
+    .phone_num{
+      @media screen and (min-width: 768px){
+        width: 30%;
+      }
+    }
+  }
+  p{
+    margin-bottom: 1em;
+  }
+  b, .num{
+    color: $primaryColor;
+  }
+  .form_content_inline{
+    .form_title{
+      @include make-xs-column(12);
+      @include make-sm-column(4);
+      @include make-md-column(3);
+      @include make-lg-column(3);
+      @media screen and (min-width: 768px){
+        text-align: right;
+      }
+    }
+    input{
+      @include make-xs-column(12);
+      @include make-sm-column(8);
+      @include make-md-column(9);
+      @include make-lg-column(9);
+    }
+  }
+}
+
+.inner_search{
+  width:100%;
+  overflow:hidden;
+  .form_grp{
+    margin:2px;
+    float:right;
+    display:inline-block;
+    position:relative;
+    width:100%;
+    text-align:right;
+    label{
+      font-size:0;
+      height:0;
+      width:0;
+    }
+    input[type="text"]{
+      width:250px;
+      padding: .5em 35px .5em .5em;
+      @include screen('xs_mobile'){
+        //width:100%;
+      }
+    }
+    input[type="submit"]{
+      font-size: 0em;
+      width: 30px !important;
+      height: 34px;
+      background: url(../images/basic/icon_search.png) no-repeat center center;
+      background-size: 20px;
+      border: none;
+      display: block;
+      opacity: .8;
+      position: absolute;
+      right:5px;
+      top:2px;
+      box-shadow: none;
+      z-index: 1;
+    }
+  }
+}

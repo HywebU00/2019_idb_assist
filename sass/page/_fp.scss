@@ -1,0 +1,19 @@
+.fp{
+	margin: 1em auto;
+	@include box-sizing;
+	padding:1em;
+  input[type="reset"] {
+    color: #fff;
+    padding: .6em 3em;
+    border: 1px solid $aColor;
+    background: $aColor;
+    border-radius: 2px;
+  }
+  input[type="submit"] {
+    color: #fff;
+    padding: .6em 3em;
+    border: 1px solid $primaryColor;
+    background: $primaryColor;
+    border-radius: 2px;
+  }
+}
