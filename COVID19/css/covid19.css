@@ -58,7 +58,7 @@ body{
 }
 @media screen and (max-width:768px){
 	.covid_wrap header{
-		height: 180px;
+		height: 160px;
 	}
 }
 @media screen and (max-width:576px){
@@ -103,12 +103,12 @@ body{
 }
 @media screen and (max-width:768px){
 	.covid_wrap .covid_content{
-		margin: 15px 5%;
+		margin: 0 5%;
 	}
 }
 @media screen and (max-width:576px){
 	.covid_wrap .covid_content{
-		margin: 15px 0;
+		margin: 0;
 		border-radius: 0;
 		padding: 1.5em;
 	}
