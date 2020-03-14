@@ -393,7 +393,7 @@
   }
 }
 .covid{
- background: #00826c;
+ background: rgba(0,0,0,.9);
  position: absolute;
  z-index: 9999;
  right: 0;
@@ -417,7 +417,7 @@ h2{
   }
   span{
     padding: 5px 10px;
-    background: #90b463;
+    background: #dc3e26;
     border-radius: 20px;
     margin-right: 5px;
   }
@@ -430,8 +430,7 @@ ul{
     width: 46%;
     margin: 2%;
     a{
-      background: #fff;
-      color: #13816e;
+      color: #fff;
       display: block;
       padding: 10px;
       border-radius: 5px;
@@ -439,9 +438,48 @@ ul{
       @include screen('mobile') {
         padding: 15px;
       }
+
+    }
+    &:nth-child(1) a{
+      background: #ff8a00;
       &:hover,&:focus{
-        background: #ea6e5b;
-        color: #fff;
+        background: #fff;
+        color: #ff8a00;
+      }
+    }
+    &:nth-child(2) a{
+      background: #1d42aa;
+      &:hover,&:focus{
+        background: #fff;
+        color: #1d42aa;
+      }
+    }
+    &:nth-child(3) a{
+      background: #0e8aa4;
+      &:hover,&:focus{
+        background: #fff;
+        color: #0e8aa4;
+      }
+    }
+    &:nth-child(4) a{
+      background: #ed3b71;
+      &:hover,&:focus{
+        background: #fff;
+        color: #ed3b71;
+      }
+    }
+    &:nth-child(5) a{
+      background: #128355;
+      &:hover,&:focus{
+        background: #fff;
+        color: #128355;
+      }
+    }
+    &:nth-child(6) a{
+      background: #e84040;
+      &:hover,&:focus{
+        background: #fff;
+        color: #e84040;
       }
     }
   }
