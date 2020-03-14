@@ -393,27 +393,30 @@
   }
 }
 .covid{
- background: rgba(0,0,0,.9);
- position: absolute;
- z-index: 9999;
- right: 0;
- top: 190px;
- padding: 20px 15px 15px 15px;
- color: #fff;
- text-align: center;
- width: 340px;
- box-sizing: border-box;
- box-shadow: -3px 5px 5px rgba(0,0,0,.5);
+  background: rgba(0,0,0,.5);
+  position: absolute;
+  z-index: 9999;
+  right: 0;
+  top: 190px;
+  padding: 20px 15px 15px 15px;
+  color: #fff;
+  text-align: center;
+  width: 340px;
+  box-sizing: border-box;
+ // box-shadow: -3px 5px 5px rgba(0,0,0,.5);
  @include screen('mobile') {
   top: 85px;
   z-index: 98;
 }
 h2{
   margin-top: 0;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   font-size: 1.25em;
   a{
     color: #fff;
+    &:hover{
+      color: #ffc000;
+    }
   }
   span{
     padding: 5px 10px;
@@ -427,13 +430,13 @@ ul{
   font-size: 1.125em;
   li{
     float: left;
-    width: 46%;
-    margin: 2%;
+    width: 48%;
+    margin: 1%;
     a{
       color: #fff;
       display: block;
-      padding: 10px;
-      border-radius: 5px;
+      padding: 15px 10px;
+      border-radius: 3px;
       font-weight: bold;
       @include screen('mobile') {
         padding: 15px;
