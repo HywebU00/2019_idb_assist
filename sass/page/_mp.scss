@@ -457,9 +457,10 @@
     ul {
         @include li-reset;
         font-size: 1.125em;
-
+        display: flex;
+        flex-wrap: wrap;
         li {
-            float: left;
+            //float: left;
             width: 48%;
             margin: 1%;
 
@@ -474,6 +475,15 @@
                     padding: 15px;
                 }
 
+            }
+            .pic{
+                width: 60px;
+                max-height: 60px;
+                margin: 1em auto;
+                img{
+                    width: 100%;
+                    height: auto;
+                }
             }
 
             &:nth-child(1) a {
