@@ -647,7 +647,7 @@ body {
     color: #000;
     text-align: center;
     text-decoration: none;
-    padding: 20px 30px 20px 70px;
+    padding: 0 30px;
     font-weight: bold;
     -webkit-transition: all .5s;
     -o-transition: all .5s;
@@ -678,13 +678,18 @@ body {
 
 }
 
-.covid_wrap .covid_content .covid_menu3 ul li:first-child a {
-    background: #ccc url(../images/icon-helping.svg) left 100px center no-repeat;
+.covid_wrap .covid_content .covid_menu3 ul li a em{
+	display: inline-block;
+	padding: 20px 0 20px 60px;
+}
+
+.covid_wrap .covid_content .covid_menu3 ul li:first-child a em{
+    background: url(../images/icon-helping.svg) left center no-repeat;
     background-size: 40px;
 }
 
-.covid_wrap .covid_content .covid_menu3 ul li:nth-child(2) a {
-    background: #ccc url(../images/icon-prevention.svg) left 100px center no-repeat;
+.covid_wrap .covid_content .covid_menu3 ul li:nth-child(2) a em{
+    background:  url(../images/icon-prevention.svg) left center no-repeat;
     background-size: 40px;
 }
 
