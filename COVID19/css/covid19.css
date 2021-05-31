@@ -396,7 +396,7 @@ body {
     .covid_wrap .covid_content .covid_menu ul li a {
         width: 100%;
         height: 160px;
-         /*padding-top: 45px;
+        /*padding-top: 45px;
         padding-left: 42%; */
         text-align: left;
     }
@@ -625,23 +625,23 @@ body {
     padding-top: 140px;
 }
 
-.covid_wrap .covid_menu3 ul{
-	display: flex;
-	justify-content: center;
-	margin: 2em auto;
-	padding: 0;
+.covid_wrap .covid_menu3 ul {
+    display: flex;
+    justify-content: center;
+    margin: 2em auto;
+    padding: 0;
 }
 
-.covid_wrap .covid_menu3 ul li{
-	width: 49%;
-	margin: 1%;
+.covid_wrap .covid_menu3 ul li {
+    width: 49%;
+    margin: 1%;
 }
 
 
 .covid_wrap .covid_menu3 ul li a {
+    position: relative;
     display: block;
     border-radius: 5px;
-    border: 2px solid #ccc;
     color: #000;
     text-align: center;
     text-decoration: none;
@@ -654,18 +654,36 @@ body {
     background-color: #ccc;
 }
 
-.covid_wrap .covid_menu3 ul li a.active{
-	background-color: #eee!important;
+.covid_wrap .covid_menu3 ul li a:hover{
+	background-color: #e5e5e5 !important;
 }
 
-.covid_wrap .covid_content .covid_menu3 ul li:first-child a{
-	background:  #ccc url(../images/icon-helping.svg) left 100px center no-repeat;
-	background-size: 40px;
+.covid_wrap .covid_menu3 ul li a.active {
+    background-color: #e5e5e5 !important;
 }
 
-.covid_wrap .covid_content .covid_menu3 ul li:nth-child(2) a{
-	background:  #ccc url(../images/icon-prevention.svg) left 100px center no-repeat;
-	background-size: 40px;
+.covid_wrap .covid_menu3 ul li a.active::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: calc(50% - 10px);
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 12px 10px 0 10px;
+    border-color: #e5e5e5 transparent transparent transparent;
+
+}
+
+.covid_wrap .covid_content .covid_menu3 ul li:first-child a {
+    background: #ccc url(../images/icon-helping.svg) left 100px center no-repeat;
+    background-size: 40px;
+}
+
+.covid_wrap .covid_content .covid_menu3 ul li:nth-child(2) a {
+    background: #ccc url(../images/icon-prevention.svg) left 100px center no-repeat;
+    background-size: 40px;
 }
 
 .covid_wrap .covid_banner {
