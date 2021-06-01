@@ -644,7 +644,7 @@ body {
     position: relative;
     display: block;
     border-radius: 5px;
-    color: #000;
+    color: #fff;
     text-align: center;
     text-decoration: none;
     padding: 0 30px;
@@ -653,35 +653,48 @@ body {
     -o-transition: all .5s;
     transition: all .5s;
     font-size: 1.5em;
-    background-color: #e5e5e5;
+    z-index: 1;
+}
+
+.covid_wrap .covid_menu3 ul li:first-child a{
+	background-color: #ff8a00;
+}
+
+.covid_wrap .covid_menu3 ul li:nth-child(2) a{
+	background-color: #1d42aa;
 }
 
 .covid_wrap .covid_menu3 ul li a:hover{
-	background-color: #ccc !important;
+	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
 }
 
-.covid_wrap .covid_menu3 ul li a.active {
-    background-color: #ccc !important;
-}
 
 .covid_wrap .covid_menu3 ul li a.active::after {
     content: "";
     display: block;
     position: absolute;
-    top: 100%;
+    bottom: -10px;
     left: calc(50% - 10px);
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 12px 10px 0 10px;
-    border-color: #ccc transparent transparent transparent;
+    width: 20px;
+    height: 20px;
+    transform: rotate(45deg);
+    z-index: 0;
+}
 
+.covid_wrap .covid_menu3 ul li:first-child a.active::after{
+	background-color: #ff8a00;
+}
+
+.covid_wrap .covid_menu3 ul li:nth-child(2) a.active::after{
+	background-color: #1d42aa;
 }
 
 .covid_wrap .covid_content .covid_menu3 ul li a em{
 	display: inline-block;
 	padding: 20px 0 20px 60px;
 	line-height: 1.6;
+	position: relative;
+	z-index: 1;
 }
 
 .covid_wrap .covid_content .covid_menu3 ul li:first-child a em{
@@ -768,6 +781,13 @@ body {
     display: block;
     clear: both;
     margin: 10px -10px;
+}
+
+.covid_wrap .covid_table table,
+.covid_wrap .covid_table tbody,
+.covid_wrap .covid_table tr,{
+	width: 100%;
+	display: block;
 }
 
 .covid_wrap .covid_table .att {
@@ -942,4 +962,10 @@ body {
     bottom: 15px;
     right: 20px;
     z-index: 999;
+}
+
+figure.image{
+	img{
+		width: 100%;
+	}	
 }
