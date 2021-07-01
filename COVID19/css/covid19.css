@@ -889,6 +889,7 @@ body {
 .covid_wrap .covid_table td {
     padding: 12px 15px;
     border-right: 2px solid #fff;
+    word-break: break-word;
 }
 
 @media screen and (max-width:768px) {
