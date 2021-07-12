@@ -1,7 +1,7 @@
 .lp {
-    @include screen('mobile') {
-        padding-top: 5em;
-    }
+    // @include screen('mobile') {
+    //     padding-top: 5em;
+    // }
     h2{
         &:after{
           content: "";

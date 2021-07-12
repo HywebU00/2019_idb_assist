@@ -99,10 +99,10 @@ $(function() {
     _menu.find('li:last>a').focusout(function() {
         _menu.find('li ul').hide();
     });
-    _search.addClass('m_search');
+    //_search.addClass('m_search');
     _nav.clone().prependTo(_mArea);
     _menu.clone().prependTo(_mArea);
-    _search.clone().prependTo(_body);
+    //_search.clone().prependTo(_body);
     // 切換PC/Mobile 選單
     function mobileMenu() {
         ww = _window.outerWidth();
