@@ -83,6 +83,7 @@ h1.title {
         }
     }
     .table{
+        width: 100%;
         border-top: 4px solid $primaryColor;
         margin-bottom: 30px;
         th{
@@ -122,6 +123,9 @@ h1.title {
                     margin-right: 5px;
                     }
                 }
+            }
+            p{
+                word-break: break-word;
             }
         }
         @include screen('mobile') {
