@@ -127,6 +127,9 @@ h1.title {
             p{
                 word-break: break-word;
             }
+            figure{
+                margin: 0;
+            }
         }
         @include screen('mobile') {
             th, td{
