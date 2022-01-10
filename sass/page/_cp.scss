@@ -86,6 +86,12 @@ h1.title {
         width: 100%;
         border-top: 4px solid $primaryColor;
         margin-bottom: 30px;
+        table{
+            th{
+                width: auto;
+                white-space: nowrap;
+            }
+        }
         th{
             width: 20%;
             text-align: right;
@@ -131,6 +137,7 @@ h1.title {
                 margin: 0;
             }
         }
+
         @include screen('mobile') {
             th, td{
                 display: block;
